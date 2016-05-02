@@ -13,21 +13,16 @@ An example result using Steve Jobs’ 2005 Stanford commencement speech can be s
 
 Running
 --------
-To run the application, first setup the Cloud Vision API.
-* Create a project with the [Google Cloud Console](https://console.cloud.google.com), and enable
-  the [Vision API](https://console.cloud.google.com/apis/api/vision.googleapis.com/overview?project=_).
-* Set up your environment with [Application Default Credentials](https://cloud.google.com/docs/authentication#developer_workflow). For
-    example, from the Cloud Console, you might create a service account,
-    download its json credentials file, then set the appropriate environment
-    variable:
+First setup access to the [IBM Watson Tone Analyzer](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/tone-analyzer.html)
 
-    ```bash
-    export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your-project-credentials.json
-    ```
-
+Once you retrieve your credentials, set the following environment variables.
+```bash
+    export IBM_API_USER_NAME=<api_user_name>
+    export IBM_API_PASSWORD=<api_password>
+```
 * Start your AEM instance in this environment.
-* Start the AutoTag workflow and select an asset.
-  ![workflow start](screenshot2.png)
+* Create a workflow to use the tone analyzer process steps and select an asset.
+
 
 ## Project Structure
 
