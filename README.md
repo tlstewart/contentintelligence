@@ -1,16 +1,37 @@
-# Sample AEM project template
+Adobe AEM content intelligence with IBM Watson API
+========
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+Sample project using IBM Watson to analyze content fragments within Adobe AEM DAM.
 
-## Modules
+It contains a workflow process steps that calls the Watson API, and assigns the results as metadata to the content fragment. To use, incorporate the workflow process step in a workflow.
 
-The main parts of the template are:
+The tags are created with namespace bluemix.
 
-* core: Java bundle containing all core functionality like OSGi services, listeners or schedulers, as well as component-related Java code such as servlets or request filters.
-* ui.apps: contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, components, templates, runmode specific configs as well as Hobbes-tests
-* ui.content: contains sample content using the components from the ui.apps
-* ui.tests: Java bundle containing JUnit tests that are executed server-side. This bundle is not to be deployed onto production.
-* ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
+An example result using Steve Jobs’ 2005 Stanford commencement speech can be seen in this screenshot:
+![contentintelligence result](screenshot1.png)
+
+
+Running
+--------
+To run the application, first setup the Cloud Vision API.
+* Create a project with the [Google Cloud Console](https://console.cloud.google.com), and enable
+  the [Vision API](https://console.cloud.google.com/apis/api/vision.googleapis.com/overview?project=_).
+* Set up your environment with [Application Default Credentials](https://cloud.google.com/docs/authentication#developer_workflow). For
+    example, from the Cloud Console, you might create a service account,
+    download its json credentials file, then set the appropriate environment
+    variable:
+
+    ```bash
+    export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your-project-credentials.json
+    ```
+
+* Start your AEM instance in this environment.
+* Start the AutoTag workflow and select an asset.
+  ![workflow start](screenshot2.png)
+
+## Project Structure
+
+This is created based on the standard project template for AEM-based applications. 
 
 ## How to build
 
