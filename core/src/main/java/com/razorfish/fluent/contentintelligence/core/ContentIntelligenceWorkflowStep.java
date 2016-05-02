@@ -37,7 +37,7 @@ import com.day.cq.tagging.TagManager;
 
 @Service
 
-@Properties({ @Property(name = Constants.SERVICE_DESCRIPTION, value = "Bluemix."),
+@Properties({ @Property(name = Constants.SERVICE_DESCRIPTION, value = "Content Intelligence with Watson"),
                 @Property(name = Constants.SERVICE_VENDOR, value = "Razorfish"),
                 @Property(name = "process.label", value = "Bluemix.") })
 
