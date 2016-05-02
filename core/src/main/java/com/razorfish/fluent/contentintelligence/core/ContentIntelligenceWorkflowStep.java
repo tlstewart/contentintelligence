@@ -117,40 +117,7 @@ public class ContentIntelligenceWorkflowStep extends AbstractWorkflowStep {
                 		 addMetaData(workItem, wfSession, asset, tagManager, tagArray);
               
                 	 }
-                	/*
-                    ContentFragment cf = asset.adaptTo(ContentFragment.class);
-                    
-                    if (cf!=null) {
-                    	
-	                    for(Iterator<ContentElement> i = cf.getElements(); i.hasNext(); ) {
-	                    	ContentElement ce = i.next();
-	                    	String content = ce.getContent();
-	                    	String tone = handleRequestResponse(content);
-	                    	
-	                    	log.info(tone);
-	                    	
-	
-	                    }
-                    } else {
-                    	log.warn("ContentFragment is null");
-                    }
-                    */
-                    /*
-                    byte[] data = new byte[(int) asset.getOriginal().getSize()];
-                    int numbytesread = asset.getOriginal().getStream().read(data);
-                    log.info("Read : {} of {}", numbytesread, asset.getOriginal().getSize() );
-
-                    String s = ""; //ImageGetRankedImageKeywords(data);
-                    if (s.length()>0) {
-                            JSONObject jsonObject = new JSONObject(s);
-
-                            JSONArray labels = (JSONArray) jsonObject.get("imageKeywords");
-
-                            String[] tagArray = createTags(tagManager, labels,NAMESPACE, CONTAINER);
-
-                            addMetaData(workItem, wfSession, asset, tagManager, tagArray);
-                    }
-                    */
+                
 
             }
 
