@@ -80,7 +80,7 @@ public abstract class AbstractWorkflowStep extends AbstractAssetWorkflowProcess 
 
 		if (handle.getResponseCode() == 200) {
 		
-		                BufferedReader reader = new BufferedReader(new InputStreamReader(handle.getInputStream()));
+		        BufferedReader reader = new BufferedReader(new InputStreamReader(handle.getInputStream()));
 		        StringBuilder stringBuilder = new StringBuilder();
 		
 		        String line = null;
