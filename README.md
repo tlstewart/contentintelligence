@@ -1,8 +1,12 @@
 Adobe AEM content intelligence with IBM Watson API
 ========
 
-Sample project using IBM Watson to analyze content fragments within Adobe AEM.
+Corresponding writeup:
+    [How machine learning can transform content management](https://www.linkedin.com/pulse/how-machine-learning-can-transform-content-management-martin-jacobs)
 
+Outline
+-------
+Sample project using IBM Watson to analyze content fragments within Adobe AEM.
 It contains a workflow process steps that calls the Watson API, and assigns the results as metadata to the content fragment. To use, incorporate the workflow process step in a workflow.
 
 The tags are created with namespace bluemix.
